@@ -1,4 +1,4 @@
 # pictureperfect
 ## <dl>
-        <dt>Anwar Saleeby (Project Group LeaderP)</dt>
+        Anwar Saleeby (Project Group Leader)
 </dl>
