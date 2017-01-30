@@ -6,7 +6,7 @@
 
 **Our Communication Tools:** *Slack*
 
-**Our Process Tool: [_Maybe_ Microsoft Project](https://products.office.com/en-us/project/project-and-portfolio-management-software)**
+**Our Process Tool: _Maybe_ [Microsoft Project](https://products.office.com/en-us/project/project-and-portfolio-management-software) but _potentially_ [Target Process](https://www.targetprocess.com/)**
 
 ## Group Members
 1. Anwar Saleeby: Project Group Leader & Client Liason
