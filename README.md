@@ -11,6 +11,6 @@
 ## Group Members
 1. Anwar Saleeby: Project Group Leader & Client Liason
 
-2. 
+2. Alain Hirwa: UI/UX
 
-3. Neal Klemenc: Documentation & UI/UX
+3. Neal Klemenc: Testing, Documentation
