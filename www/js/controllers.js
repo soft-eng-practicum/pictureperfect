@@ -43,14 +43,26 @@ angular.module('starter.controllers', [])
 
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+    { title: 'Distance', id: 0},
+    { title: 'Angle', id: 1},
   ];
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
+  $scope.playlistSet = [
+   [
+     { title: 'Longshot', Description: 'This is a Longshot'},
+     { title: 'Medium Shot', Description: 'This is a Medium Shot'},
+     { title: 'Closeup', Description: 'This is a Closeup'},
+     { title: 'Extreme Closeup', description: 'Whomever'}
+   ],
+   [
+     { title: 'Head On', description: 'Whoever'},
+     { title: 'High Angle', description: 'Whatever'},
+     { title: 'Low Angle', description: 'Whenever'},
+     { title: 'Overhead', description: 'Whomever'}
+   ],
+
+ ];
+ $scope.id = $stateParams.playlistId;
 });
