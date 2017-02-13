@@ -54,7 +54,7 @@ angular.module('starter.controllers', [])
      { title: 'Longshot', Description: 'This is a Longshot'},
      { title: 'Medium Shot', Description: 'This is a Medium Shot'},
      { title: 'Closeup', Description: 'This is a Closeup'},
-     { title: 'Extreme Closeup', description: 'Whomever'}
+     { title: 'Extreme Closeup', description: 'This is an extreme closeup'}
    ],
    [
      { title: 'Head On', description: 'Whoever'},
