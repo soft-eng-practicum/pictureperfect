@@ -16,7 +16,7 @@ module.exports = function(config) {
 
       // list of files / patterns to load in the browser
       files: [
-        '*.js'
+        'test/spec/*Spec.js',
       ],
 
       // list of files to exclude
@@ -48,7 +48,7 @@ module.exports = function(config) {
 
       // start these browsers
       // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-      browsers: ['Chrome', 'ChromeCanary', 'Firefox', 'Opera', 'IE'],
+      browsers: ['Chrome'],
 
       // e.g see https://swizec.com/blog/how-to-run-javascript-tests-in-chrome-on-travis/swizec/6647
       customLaunchers: {
@@ -60,7 +60,7 @@ module.exports = function(config) {
 
       // Continuous Integration mode
       // if true, Karma captures browsers, runs the tests and exits
-      singleRun: false,
+      singleRun: true,
 
       // Concurrency level
       // how many browser should be started simultaneous
