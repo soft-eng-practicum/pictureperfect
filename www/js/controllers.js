@@ -41,10 +41,18 @@ angular.module('starter.controllers', [])
   };
 })
 
+
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
     { title: 'Distance', id: 0},
     { title: 'Angle', id: 1},
+  ];
+})
+
+.controller('DefinitionCtrl',function($scope){
+  $scope.definitionSet = [
+    { description: 'Description'},
+    { image: 'Placeholder text'},
   ];
 })
 
