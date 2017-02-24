@@ -1,0 +1,1 @@
+import {Camera} from 'ionic-native';
