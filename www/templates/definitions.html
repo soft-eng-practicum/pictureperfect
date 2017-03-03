@@ -2,6 +2,7 @@
   <ion-content>
       <ion-item class="item-text-wrap" ng-repeat="definitionSet in definitionSet[id]">
         <div><p>{{definitionSet.definition}}</p></div>
+        <img src={{definitionSet.pictureFileName}} alt={{definitionSet.definition}} />
       </ion-item>
       <button ion-button round ng-click="takePicture()"> Camera </button>
   </ion-content>
