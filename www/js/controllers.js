@@ -96,18 +96,18 @@ angular.module('starter.controllers', [])
 
 .controller('DefinitionCtrl',function($scope, $stateParams){
   $scope.definitionSet = [
-    [{definition: 'The Extreme Longshot is taken so far away from the subject that their features are no longer visible. This is used to create a sense of a character being lost or almost engulfed by the sheer size of their surroundings. Which can result in a character being made small or insignificant due to their situation', pictureFileName: ''}],
-    [{definition: 'Typically shows the entire object or human figure and is usually intended to place it in some relation to its surroundings.', pictureFileName: '../img/Longshot.jpg'}],
-    [{definition: 'Captures subject’s knees and upward. shows a bit more of the background but is still close enough for facial expressions to be seen.', pictureFileName: ''}],
-    [{definition: 'Captures subject’s waist and upward. In principal, the medium shot is what can be seen with the human eye in a single quick glance and convey all the action taking place in that field of view.', pictureFileName: ''}],
-    [{definition: 'Halfway between a mid shot and a close-up. Usually covers the subject’s head and shoulders.', pictureFileName: ''}],
-    [{definition: 'Close-ups display the most detail, but they do not include the broader scene.', pictureFileName:'../img/CloseUpShot.jpg'}],
-    [{definition: 'The shot is so tight that only a detail of the subject, such as someone’s eyes, can be seen.', pictureFileName:''}],
-    [{definition: 'Eye level, perpendicular to subject', pictureFileName:''}],
-    [{definition: 'Camera above subject, angled downward toward the subject', pictureFileName:''}],
-    [{definition: 'Camera below subject, angled upward toward the subject', pictureFileName:''}],
-    [{definition: 'Camera directly above subject, facing directly downward', pictureFileName:''}],
-    [{definition: 'Camera horizontally tilted in either direction', pictureFileName:''}],
+    [{definition: 'The Extreme Longshot is taken so far away from the subject that their features are no longer visible. This is used to create a sense of a character being lost or almost engulfed by the sheer size of their surroundings. Which can result in a character being made small or insignificant due to their situation', pictureFileName: '', graphic: ''}],
+    [{definition: 'Typically shows the entire object or human figure and is usually intended to place it in some relation to its surroundings.', pictureFileName: '/img/Longshot.jpg', graphic: '/img/graphics/Longshot.png'}],
+    [{definition: 'Captures subject’s knees and upward. shows a bit more of the background but is still close enough for facial expressions to be seen.', pictureFileName: '', graphic: '/img/graphics/MediumLongshot.png'}],
+    [{definition: 'Captures subject’s waist and upward. In principal, the medium shot is what can be seen with the human eye in a single quick glance and convey all the action taking place in that field of view.', pictureFileName: '', graphic: '/img/graphics/MediumShot.png'}],
+    [{definition: 'Halfway between a mid shot and a close-up. Usually covers the subject’s head and shoulders.', pictureFileName: '', graphic: 'img/graphics/MediumCloseup.png'}],
+    [{definition: 'Close-ups display the most detail, but they do not include the broader scene.', pictureFileName:'/img/CloseUpShot.jpg', graphic: 'img/graphics/Closeup.png'}],
+    [{definition: 'The shot is so tight that only a detail of the subject, such as someone’s eyes, can be seen.', pictureFileName:'', graphic: ''}],
+    [{definition: 'Eye level, perpendicular to subject', pictureFileName:'', graphic: ''}],
+    [{definition: 'Camera above subject, angled downward toward the subject', pictureFileName:'', graphic: ''}],
+    [{definition: 'Camera below subject, angled upward toward the subject', pictureFileName:'', graphic: ''}],
+    [{definition: 'Camera directly above subject, facing directly downward', pictureFileName:'', graphic: ''}],
+    [{definition: 'Camera horizontally tilted in either direction', pictureFileName:'', graphic: ''}],
   ];
   $scope.id = $stateParams.definitionId;
 });
