@@ -83,7 +83,7 @@ angular.module('starter.controllers', [])
      { title: 'Extreme Closeup', description: 'Single feature of subject head', id:6},
    ],
    [
-     { title: 'Head On', description: 'Camera level with subject', id:7},
+     { title: 'Eye Level', description: 'Camera level with subject', id:7},
      { title: 'High Angle', description: 'Camera pointed down on subject', id:8},
      { title: 'Low Angle', description: 'Camera pointed up on subject', id:9},
      { title: 'Overhead', description: 'Camera directly above subject', id:10},
@@ -96,10 +96,10 @@ angular.module('starter.controllers', [])
 
 .controller('DefinitionCtrl',function($scope, $stateParams){
   $scope.definitionSet = [
-    [{definition: 'The Extreme Longshot is taken so far away from the subject that their features are no longer visible. This is used to create a sense of a character being lost or almost engulfed by the sheer size of their surroundings. Which can result in a character being made small or insignificant due to their situation', pictureFileName: '', graphic: '/img/graphics/ExtremeLongshot.png'}],
-    [{definition: 'Typically shows the entire object or human figure and is usually intended to place it in some relation to its surroundings.', pictureFileName: '/img/Longshot.jpg', graphic: '/img/graphics/Longshot.png'}],
-    [{definition: 'Captures subject’s knees and upward. shows a bit more of the background but is still close enough for facial expressions to be seen.', pictureFileName: '', graphic: '/img/graphics/MediumLongshot.png'}],
-    [{definition: 'Captures subject’s waist and upward. In principal, the medium shot is what can be seen with the human eye in a single quick glance and convey all the action taking place in that field of view.', pictureFileName: '', graphic: '/img/graphics/MediumShot.png'}],
+    [{definition: 'The Extreme Longshot is taken so far away from the subject that their features are no longer visible. This is used to create a sense of a character being lost or almost engulfed by the sheer size of their surroundings. Which can result in a character being made small or insignificant due to their situation', pictureFileName: '', graphic: 'img/graphics/ExtremeLongshot.png'}],
+    [{definition: 'Typically shows the entire object or human figure and is usually intended to place it in some relation to its surroundings.', pictureFileName: '/img/Longshot.jpg', graphic: 'img/graphics/Longshot.png'}],
+    [{definition: 'Captures subject’s knees and upward. shows a bit more of the background but is still close enough for facial expressions to be seen.', pictureFileName: '', graphic: 'img/graphics/MediumLongshot.png'}],
+    [{definition: 'Captures subject’s waist and upward. In principal, the medium shot is what can be seen with the human eye in a single quick glance and convey all the action taking place in that field of view.', pictureFileName: '', graphic: 'img/graphics/Mediumshot.png'}],
     [{definition: 'Halfway between a mid shot and a close-up. Usually covers the subject’s head and shoulders.', pictureFileName: '', graphic: 'img/graphics/MediumCloseup.png'}],
     [{definition: 'Close-ups display the most detail, but they do not include the broader scene.', pictureFileName:'/img/CloseUpShot.jpg', graphic: 'img/graphics/Closeup.png'}],
     [{definition: 'The shot is so tight that only a detail of the subject, such as someone’s eyes, can be seen.', pictureFileName:'', graphic: 'img/graphics/ExtremeCloseup.png'}],

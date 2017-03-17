@@ -1,9 +1,19 @@
 <ion-view view-title="Definitions">
   <ion-content>
       <ion-item class="item-text-wrap" ng-repeat="definitionSet in definitionSet[id]">
-        <div><p>{{definitionSet.definition}}</p></div>
-        <img src={{definitionSet.graphic}} alt={{definitionSet.definition}} />
+
+        <p class = "definitionText">{{definitionSet.definition}}</p>
+        <img class = "myImage" src={{definitionSet.graphic}} alt={{definitionSet.definition}}/>
+
+        <div class= "col" style = "text-align:center">
+        <button class = "myButton" ng-click="takePicture()"> Camera </button>
+      </div>
+
       </ion-item>
-      <button ion-button round ng-click="takePicture()"> Camera </button>
+
+      <ion-item>
+        <h1 class = "headerText"> Your Examples </h1>
+      </ion-item>
+    </div>
   </ion-content>
 </ion-view>
