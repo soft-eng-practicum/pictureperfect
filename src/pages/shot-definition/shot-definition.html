@@ -1,0 +1,31 @@
+<!--
+  Generated template for the ShotDefinition page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>shotDefinition</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+
+      <ion-item *ngFor="let s of selectedShot">
+        <p class = "definitionText">{{s.definition}}</p>
+        <img class = "myImage" src={{s.graphic}}/>
+        <div class= "col" style = "text-align:center">
+        <button class = "myButton" (click)="takePicture()"> Camera </button>
+      </div>
+      <br/>
+    </ion-item>
+
+        <h1 class = "headerText"> Your Example </h1>
+        <img class = "myImage" [src]="base64Image" *ngIf="base64Image"/>
+
+</ion-content>
