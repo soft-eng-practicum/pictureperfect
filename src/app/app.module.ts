@@ -5,6 +5,7 @@ import { HomePage } from '../pages/home/home';
 import { ShotTypePage } from '../pages/shot-type/shot-type';
 import { ShotNamePage } from '../pages/shot-name/shot-name';
 import { ShotDefinitionPage } from '../pages/shot-definition/shot-definition';
+import { WelcomePage } from '../pages/welcome/welcome';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -15,7 +16,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     ShotTypePage,
     ShotNamePage,
-    ShotDefinitionPage
+    ShotDefinitionPage,
+    WelcomePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -26,7 +28,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     ShotTypePage,
     ShotNamePage,
-    ShotDefinitionPage
+    ShotDefinitionPage,
+    WelcomePage
   ],
   providers: [
     StatusBar,

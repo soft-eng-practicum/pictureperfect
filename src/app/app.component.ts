@@ -4,6 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+import { WelcomePage } from '../pages/welcome/welcome';
 import { ShotTypePage } from '../pages/shot-type/shot-type';
 
 
@@ -11,7 +12,7 @@ import { ShotTypePage } from '../pages/shot-type/shot-type';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = ShotTypePage;
+  rootPage = WelcomePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
