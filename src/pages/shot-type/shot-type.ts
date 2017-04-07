@@ -9,17 +9,24 @@ import { ShotNamePage } from '../shot-name/shot-name';
   Ionic pages and navigation.
 */
 @Component({
+  //selector defines a new scss file to override for this class
   selector: 'page-shot-type',
+  //templateUrl defines the template html page to be used  with this class
   templateUrl: 'shot-type.html'
 })
+
+//the class is defined here
 export class ShotTypePage {
 
+//two string arrays are defined in the class
 distanceNames: Array<{title: string, description: string, definition: string, graphic: string}>;
 
 angleNames: Array<{title: string, description: string, definition: string, graphic: string}>;
 
+  //constructor method that creates a nav controller and nav params for changing pages
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
+  //populate the two arrays with data
   this.distanceNames = [
   { title: 'Extreme Longshot', description: 'Subject and surroundings', definition: 'The Extreme Longshot is taken so far away from the subject that their features are no longer visible. This is used to create a sense of a character being lost or almost engulfed by the sheer size of their surroundings. Which can result in a character being made small or insignificant due to their situation', graphic: 'assets/img/graphics/ExtremeLongshot.png'},
   { title: 'Longshot', description: 'Entire subject', definition: 'Typically shows the entire object or human figure and is usually intended to place it in some relation to its surroundings.', graphic: 'assets/img/graphics/Longshot.png'},
@@ -43,6 +50,7 @@ angleNames: Array<{title: string, description: string, definition: string, graph
     console.log('ionViewDidLoad ShotTypePage');
   }
 
+  //define methods that will push a new page onto the current one and pass an array to be recieved by the new page.
   pushDistancePage(){
     // push another page on to the navigation stack
     // causing the nav controller to transition to the new page
