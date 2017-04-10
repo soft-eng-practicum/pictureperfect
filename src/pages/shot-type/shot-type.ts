@@ -9,9 +9,7 @@ import { ShotNamePage } from '../shot-name/shot-name';
   Ionic pages and navigation.
 */
 @Component({
-  //selector defines a new scss file to override for this class
   selector: 'page-shot-type',
-  //templateUrl defines the template html page to be used  with this class
   templateUrl: 'shot-type.html'
 })
 
