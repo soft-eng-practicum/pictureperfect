@@ -14,3 +14,15 @@
 2. Alain Hirwa: UI/UX
 
 3. Neal Klemenc: Testing, Documentation
+
+## User Manual
+                            Installation
+Download Ionic View: [[Android]](https://play.google.com/store/apps/details?id=com.ionic.viewapp&hl=en) [[IOS]](https://itunes.apple.com/us/app/ionic-view/id849930087?mt=8)
+
+Select Preview Shared App
+
+Enter App ID: 516CA6FC
+
+Select Load App
+
+                            Usage
