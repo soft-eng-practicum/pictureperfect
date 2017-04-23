@@ -25,7 +25,13 @@ page-shot-definition {
   .myImage {
     display: block;
     margin: auto;
-    max-width: 50%;
+    padding-top: 5%;
+  }
+
+  .userPicture {
+    display: block;
+    margin: auto;
+    padding: 5%;
   }
 
   .headerText {

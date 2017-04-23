@@ -24,17 +24,25 @@ shotDefinitions: Array<{title: string, description: string, definition: string, 
 
 
   }
-  
+
   takePicture(){
-    Camera.getPicture({
-        destinationType: Camera.DestinationType.DATA_URL,
-        targetWidth: 1000,
-        targetHeight: 1000
-    }).then((imageData) => {
-      // imageData is a base64 encoded string
-        this.base64Image = "data:image/jpeg;base64," + imageData;
-    }, (err) => {
-        console.log(err);
+    var options = {
+        quality: 100,
+        destinationType: Camera.DestinationType.FILE_URI,
+        sourceType: Camera.PictureSourceType.CAMERA,
+        allowEdit: false,
+        // encodingType: Camera.EncodingType.PNG,
+        // targetWidth: 250,
+        // targetHeight: 250,
+        saveToPhotoAlbum: false,
+        correctOrientation: true,
+        cameraDirection: Camera.Direction.BACK
+    };
+
+    Camera.getPicture(options).then((imageData) => {
+            this.base64Image = imageData;
+    }, (error) => {
+        console.log("ERROR -> " + JSON.stringify(error));
     });
 
 }

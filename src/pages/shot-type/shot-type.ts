@@ -26,9 +26,9 @@ angleNames: Array<{title: string, description: string, definition: string, graph
 
   //populate the two arrays with data
   this.distanceNames = [
-  { title: 'Extreme Longshot', description: 'Subject and surroundings', definition: 'The Extreme Longshot is taken so far away from the subject that their features are no longer visible. This is used to create a sense of a character being lost or almost engulfed by the sheer size of their surroundings. Which can result in a character being made small or insignificant due to their situation', graphic: 'assets/img/graphics/ExtremeLongshot.png'},
-  { title: 'Longshot', description: 'Entire subject', definition: 'Typically shows the entire object or human figure and is usually intended to place it in some relation to its surroundings.', graphic: 'assets/img/graphics/Longshot.png'},
-  { title: 'Medium Longshot', description: 'Subject from the knees-up', definition: 'Captures subject’s knees and upward. shows a bit more of the background but is still close enough for facial expressions to be seen.', graphic: 'assets/img/graphics/MediumLongshot.png'},
+  { title: 'Extreme Long shot', description: 'Subject and surroundings', definition: 'The Extreme Longshot is taken so far away from the subject that their features are no longer visible. This is used to create a sense of a character being lost or almost engulfed by the sheer size of their surroundings. Which can result in a character being made small or insignificant due to their situation', graphic: 'assets/img/graphics/ExtremeLongshot.png'},
+  { title: 'Long shot', description: 'Entire subject', definition: 'Typically shows the entire object or human figure and is usually intended to place it in some relation to its surroundings.', graphic: 'assets/img/graphics/Longshot.png'},
+  { title: 'Medium Long shot', description: 'Subject from the knees-up', definition: 'Captures subject’s knees and upward. shows a bit more of the background but is still close enough for facial expressions to be seen.', graphic: 'assets/img/graphics/MediumLongshot.png'},
   { title: 'Medium Shot', description: 'Subject from the waist-up', definition: 'Captures subject’s waist and upward. In principal, the medium shot is what can be seen with the human eye in a single quick glance and convey all the action taking place in that field of view.', graphic: 'assets/img/graphics/Mediumshot.png'},
   { title: 'Medium Closeup', description: 'Subject from the shoulders-up', definition: 'Halfway between a mid shot and a close-up. Usually covers the subject’s head and shoulders.', graphic: 'assets/img/graphics/MediumCloseup.png'},
   { title: 'Closeup', description: 'Subject head', definition: 'Close-ups display the most detail, but they do not include the broader scene.', graphic: 'assets/img/graphics/Closeup.png'},
@@ -36,11 +36,11 @@ angleNames: Array<{title: string, description: string, definition: string, graph
     ];
 
     this.angleNames = [
-    { title: 'Eye Level', description: 'Camera level with subject', definition: 'Eye level, perpendicular to subject', graphic: 'assets/img/graphics/ExtremeLongshot.png'},
-    { title: 'High Angle', description: 'Camera pointed down on subject', definition: 'Camera above subject, angled downward toward the subject', graphic: 'assets/img/graphics/ExtremeLongshot.png'},
-    { title: 'Low Angle', description: 'Camera pointed up on subject', definition: 'Camera below subject, angled upward toward the subject', graphic: 'assets/img/graphics/ExtremeLongshot.png'},
-    { title: 'Overhead', description: 'Camera directly above subject', definition: 'Camera directly above subject, facing directly downward', graphic: 'assets/img/graphics/ExtremeLongshot.png'},
-    { title: 'Canted', description: 'Camera tilted to the side', definition: 'Camera horizontally tilted in either direction', graphic: 'assets/img/graphics/ExtremeLongshot.png'},
+    { title: 'Eye Level', description: 'Camera level with subject', definition: 'Eye level, perpendicular to subject', graphic: 'assets/img/graphics/EyeLevel.png'},
+    { title: 'High Angle', description: 'Camera pointed down on subject', definition: 'Camera above subject, angled downward toward the subject', graphic: 'assets/img/graphics/HighAngle.png'},
+    { title: 'Low Angle', description: 'Camera pointed up on subject', definition: 'Camera below subject, angled upward toward the subject', graphic: 'assets/img/graphics/LowAngle.png'},
+    { title: 'Overhead', description: 'Camera directly above subject', definition: 'Camera directly above subject, facing directly downward', graphic: 'assets/img/graphics/Overhead.png'},
+    { title: 'Canted', description: 'Camera tilted to the side', definition: 'Camera horizontally tilted in either direction', graphic: 'assets/img/graphics/Canted.png'},
       ];
   }
 
