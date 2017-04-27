@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { ShotTypePage } from '../shot-type/shot-type';
+import { Imageprovider } from '../../providers/imageprovider';
 
 /*
   Generated class for the Welcome page.

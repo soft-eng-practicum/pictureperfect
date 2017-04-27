@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { ShotDefinitionPage } from '../shot-definition/shot-definition';
+import { Imageprovider } from '../../providers/imageprovider';
 
 /*
   Generated class for the ShotName page.
@@ -14,8 +15,8 @@ import { ShotDefinitionPage } from '../shot-definition/shot-definition';
 })
 export class ShotNamePage {
 
-shotNames: Array<{title: string, description: string, definition: string, graphic: string}>;
-selectedShot: Array<{title: string, description: string, definition: string, graphic: string}>;
+shotNames: Array<{id: number, title: string, description: string, definition: string, graphic: string}>;
+selectedShot: Array<{id: number, title: string, description: string, definition: string, graphic: string}>;
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
@@ -33,7 +34,7 @@ selectedShot: Array<{title: string, description: string, definition: string, gra
     // causing the nav controller to transition to the new page
     // optional data can also be passed to the pushed page.
     this.selectedShot = [
-    {title: s.title, description: s.description, definition: s.definition, graphic: s.graphic},
+    {id: s.id, title: s.title, description: s.description, definition: s.definition, graphic: s.graphic},
     ];
     this.navCtrl.push(ShotDefinitionPage, {shot: this.selectedShot});
   }

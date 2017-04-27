@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import {Camera} from 'ionic-native';
+import { Imageprovider } from '../../providers/imageprovider';
 
 /*
   Generated class for the ShotDefinition page.
@@ -15,13 +16,13 @@ import {Camera} from 'ionic-native';
 export class ShotDefinitionPage {
 public base64Image: string;
 
-selectedShot: Array<{title: string, description: string, definition: string, graphic: string}>;
+selectedShot: Array<{id: number, title: string, description: string, definition: string, graphic: string}>;
 
 shotDefinitions: Array<{title: string, description: string, definition: string, graphic: string}>;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public mydata: Imageprovider) {
   this.selectedShot = navParams.get('shot');
-
+  this.base64Image = this.mydata.getData(this.selectedShot[0].id);
 
   }
 
@@ -41,6 +42,8 @@ shotDefinitions: Array<{title: string, description: string, definition: string, 
 
     Camera.getPicture(options).then((imageData) => {
             this.base64Image = imageData;
+            this.mydata.setData(imageData, this.selectedShot[0].id);
+            this.base64Image = this.mydata.getData(this.selectedShot[0].id);
     }, (error) => {
         console.log("ERROR -> " + JSON.stringify(error));
     });

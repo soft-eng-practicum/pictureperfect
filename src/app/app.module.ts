@@ -7,6 +7,8 @@ import { ShotNamePage } from '../pages/shot-name/shot-name';
 import { ShotDefinitionPage } from '../pages/shot-definition/shot-definition';
 import { WelcomePage } from '../pages/welcome/welcome';
 
+import { Imageprovider } from '../providers/imageprovider';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -34,6 +36,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    Imageprovider,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
