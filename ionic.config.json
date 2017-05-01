@@ -1,6 +1,6 @@
 {
-  "name": "ionic2-app-base",
-  "app_id": "",
-  "typescript": true,
-  "v2": true
+  "name": "Picture Perfect",
+  "app_id": "58d02265",
+  "v2": true,
+  "typescript": true
 }

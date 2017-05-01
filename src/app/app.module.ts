@@ -1,18 +1,25 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
+import { ShotTypePage } from '../pages/shot-type/shot-type';
+import { ShotNamePage } from '../pages/shot-name/shot-name';
+import { ShotDefinitionPage } from '../pages/shot-definition/shot-definition';
+import { WelcomePage } from '../pages/welcome/welcome';
+
+import { Imageprovider } from '../providers/imageprovider';
+
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
     HomePage,
-    TabsPage
+    ShotTypePage,
+    ShotNamePage,
+    ShotDefinitionPage,
+    WelcomePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -20,11 +27,17 @@ import { TabsPage } from '../pages/tabs/tabs';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
     HomePage,
-    TabsPage
+    ShotTypePage,
+    ShotNamePage,
+    ShotDefinitionPage,
+    WelcomePage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [
+    StatusBar,
+    SplashScreen,
+    Imageprovider,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
+  ]
 })
 export class AppModule {}
